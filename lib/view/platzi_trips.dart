@@ -1,9 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:platzi_trips/components/button_setting_dto.dart';
 import 'package:platzi_trips/view/home_view.dart';
 import 'package:platzi_trips/view/platzi_trips_android.dart';
 import 'package:platzi_trips/view/platzi_trips_cupertino.dart';
-import 'package:platzi_trips/view/profile_view.dart';
+import 'package:platzi_trips/view/profile/profile_view.dart';
 import 'package:platzi_trips/view/search_view.dart';
 
 class PlatziTrips extends StatelessWidget {
@@ -21,20 +22,14 @@ class PlatziTrips extends StatelessWidget {
     return [HomeView(), SearchView(), ProfileView()];
   }
 
-  List<NavigationButton> _navigationButtons() {
+  List<ButtonSettings> _navigationButtons() {
     return [
-      NavigationButton("Home1", Icon(Icons.home)),
-      NavigationButton("Search1", Icon(Icons.search)),
-      NavigationButton("profile1", Icon(Icons.person)),
+      ButtonSettings(label: "Home", child: Icon(Icons.home)),
+      ButtonSettings(label: "Search", child: Icon(Icons.search)),
+      ButtonSettings(label: "Profile", child: Icon(Icons.person)),
     ];
   }
 }
 
-class NavigationButton {
-  final Icon icon;
-  final String label;
-
-  NavigationButton(this.label, this.icon);
-}
 
 

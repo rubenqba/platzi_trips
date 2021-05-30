@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips/components/description_place.dart';
-import 'package:platzi_trips/components/header_appbar.dart';
+import 'package:platzi_trips/components/popular_header_appbar.dart';
 import 'package:platzi_trips/components/review_list.dart';
-import 'package:platzi_trips/model/review_model.dart';
+import 'package:platzi_trips/model/model_utils.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -23,6 +23,6 @@ class HomeView extends StatelessWidget {
   }
 
   Widget _appbar() {
-    return HeaderAppbar();
+    return PopularHeaderAppbar();
   }
 }

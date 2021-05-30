@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class GradientBack extends StatelessWidget {
   final String title;
 
-
   GradientBack(this.title);
 
   @override

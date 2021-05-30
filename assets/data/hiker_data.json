@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Nevado de Toluca",
+    "categories" : [ "Hiking Trail", "Natural Feature", "Park","Scenery & Photography" ],
+    "steps": 123456,
+    "favorite": true,
+    "image": "assets/img/hike/hike-mountain-1.jpg"
+  },
+  {
+    "name": "Copper Canyon",
+    "categories" : [ "Natural Feature", "Hiking Trail" ],
+    "steps": 45677,
+    "favorite": false,
+    "image": "assets/img/hike/hike-mountain-2.jpg"
+  },
+  {
+    "name": "Desierto de los Leones",
+    "categories" : [ "Park", "Natural Feature", "Hiking Trail" ],
+    "steps": 2346127,
+    "favorite": false,
+    "image": "assets/img/hike/hike-desert-1.jpg"
+  },
+  {
+    "name": "Chipinque",
+    "categories" : [ "Hiking Trail", "Natural Feature", "Park" ],
+    "steps": 123489,
+    "favorite": true,
+    "image": "assets/img/hike/hike-mountain-3.jpg"
+  },
+  {
+    "name": "Paso de Cortes",
+    "categories" : [ "Hiking trail" ],
+    "steps": 239239,
+    "favorite": true,
+    "image": "assets/img/hike/hike-mountain-4.jpg"
+  }
+]

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips/components/header_appbar.dart';
+import 'package:platzi_trips/components/popular_header_appbar.dart';
 import 'package:platzi_trips/view/home_view.dart';
 import 'package:platzi_trips/view/platzi_trips.dart';
 import 'package:platzi_trips/view/platzi_trips_cupertino.dart';
@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: "Lato"
       ),
       home: PlatziTrips()
     );

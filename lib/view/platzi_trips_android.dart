@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips/components/button_setting_dto.dart';
 import 'package:platzi_trips/view/platzi_trips.dart';
 
 class PlatziTripsAndroid extends StatefulWidget {
 
   final List<Widget> tabs;
-  final List<NavigationButton> navigationButtons;
+  final List<ButtonSettings> navigationButtons;
 
   const PlatziTripsAndroid({Key? key, required this.tabs, required this.navigationButtons}) : super(key: key);
 
@@ -15,7 +16,7 @@ class PlatziTripsAndroid extends StatefulWidget {
 class _PlatziTripsAndroidState extends State<PlatziTripsAndroid> {
   int _selectedTab = 0;
   final List<Widget> _tabs;
-  final List<NavigationButton> _navigationButtons;
+  final List<ButtonSettings> _navigationButtons;
 
   _PlatziTripsAndroidState(this._tabs, this._navigationButtons);
 
@@ -27,7 +28,7 @@ class _PlatziTripsAndroidState extends State<PlatziTripsAndroid> {
           selectedItemColor: Colors.indigo,
           currentIndex: _selectedTab,
           onTap: _selectView,
-          items: this._navigationButtons.map((b) => BottomNavigationBarItem(icon: b.icon, label: b.label)).toList()
+          items: this._navigationButtons.map((b) => BottomNavigationBarItem(icon: b.child, label: b.label)).toList()
         ),
         data: Theme.of(context)
             .copyWith(canvasColor: Colors.white, primaryColor: Colors.purple),

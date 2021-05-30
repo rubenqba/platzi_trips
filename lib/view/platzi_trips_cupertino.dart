@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:platzi_trips/view/platzi_trips.dart';
+import 'package:platzi_trips/components/button_setting_dto.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
   final List<Widget> tabs;
-  final List<NavigationButton> navigationButtons;
+  final List<ButtonSettings> navigationButtons;
 
   const PlatziTripsCupertino({Key? key, required this.tabs, required this.navigationButtons}) : super(key: key);
 
@@ -16,7 +16,7 @@ class PlatziTripsCupertino extends StatelessWidget {
           tabBar: CupertinoTabBar(
               activeColor: Colors.indigo,
               backgroundColor: Colors.white.withAlpha(50),
-              items: this.navigationButtons.map((b) => BottomNavigationBarItem(icon: b.icon, label: b.label)).toList()
+              items: this.navigationButtons.map((b) => BottomNavigationBarItem(icon: b.child, label: b.label)).toList()
           ),
         )
     );
